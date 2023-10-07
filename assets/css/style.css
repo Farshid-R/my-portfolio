@@ -1,0 +1,391 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 10px;
+}
+body {
+    direction: ltr;
+    background-color: #34363A;
+    color: #bbb;
+    font-family: "Mulish", Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+a {
+    text-decoration: none;
+    color: #BBBBBB;
+    transition: all 0.3s;
+}
+a:hover {
+    color: #fff;
+}
+ul , li {
+    list-style: none;
+}
+.row {
+    display: flex;
+    gap: 25px;
+}
+.bck-gray {
+    background-color: #494B50;
+}
+.column-1 {
+    width: 8.333%;
+}
+.column-2 {
+    width: 16.666%;
+}
+.column-3 {
+    width : 24.999%;
+}
+.column-4 {
+    width: 33.333%;
+}
+.column-5 {
+    width: 41.666%;
+}
+.column-6 {
+    width: 50%;
+}
+.column-7 {
+    width: 58.333%;
+}
+.column-8 {
+    width: 66.666;
+}
+.column-9 {
+    width: 75%;
+}
+.column-10 {
+    width : 83.333;
+}
+.column-11 {
+    width: 91.6666;
+}
+.column-12 {
+    width: 100%;
+}
+.space-rows {
+    margin: 30px 0;
+    padding: 45px 0;
+}
+.column-title {
+    color: #fff;
+    margin-bottom: 30px;
+}
+.btn {
+    background-color: #fff;
+    padding : 4px 15px;
+    display: inline-block;
+    font-size: 1.5rem;
+    border-radius: 2px;
+}
+.btn a {
+    color: #000;
+}
+.space-border-bottom {
+    border-bottom: solid 1px rgba(255,255,255,0.2);
+    padding: 30px 0;
+}
+.container {
+    width : 100%;
+    padding: 0 50px;
+}
+.left-sidebar {
+    width: 450px;
+    height: 100%;
+    position : fixed;
+    top: 0;
+    left: 0;
+    background-color: #494B50;
+    display: flex;
+    align-items: center;
+}
+.left-sidebar .left-sidebar__inner {
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.left-sidebar .left-sidebar__logo {
+    color: #fff;
+    font-size: 2rem;
+}
+.left-sidebar .left-sidebar__menu ul li a {
+    display: block;
+    padding: 5px 0;
+    font-size: 1.5rem;
+}
+.left-sidebar .left-sidebar__copyright {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    line-height: 25px;
+}
+.right-sidebar .right-sidebar__inner {
+    padding-left : 450px;
+}
+.right-sidebar .fix-height {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.right-sidebar .home-content {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.right-sidebar .avatar .avatar__image {
+    width: 300px;
+    height : 300px;
+    background-image : url(../images/avatar.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 80px;
+    box-shadow: inset 0 0 0 10px rgba(255,255,255,0.5);
+}
+.right-sidebar .home-content .persona {
+    display: flex;
+    flex-direction: column;
+    gap : 15px;
+}
+.right-sidebar .home-content .persona .full-name {
+    font-size: 4rem;
+    color: #fff;
+}
+.right-sidebar .home-content .persona .information {
+    font-size: 1.5rem;
+    font-family: "Mulish", Arial, Helvetica, sans-serif;
+}
+.right-sidebar .home-content .persona .social-media ul {
+    display: flex;
+    gap : 20px;
+}
+.right-sidebar .home-content .persona .social-media ul li a {
+    font-size: 2rem;
+    color: #fff;
+}
+.right-sidebar .page-content {
+    display: felx;
+    flex-direction: column;
+    padding: 50px 0% 50px 0%;
+}
+.breadcrumb {
+    display: inline-block;
+    background-color: rgba(255,255,255,0.04);
+    padding: 3px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.right-sidebar .page-title {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+.right-sidebar .page-content .biography .main-picture img {
+    width: 100%;
+    height: auto;
+}
+.right-sidebar .page-content .biography .author-information .full-name {
+    color: #fff;
+    font-size: 2.2rem;
+
+}
+.right-sidebar .page-content .biography .author-information .job-title {
+    font-size: 1.5rem;
+}
+.right-sidebar .page-content .biography .discription {
+    font-size: 1.5rem;
+}
+.right-sidebar .page-content .biography .author-details {
+    margin-bottom: 25px;
+}
+.right-sidebar .page-content .biography ul li span:nth-child(1) {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    min-width: 120px;
+}
+.right-sidebar .page-content .biography ul li span:nth-child(2) {
+    font-size: 1.5rem;
+}
+.skills .skills-info {
+    display: flex;
+    justify-content: space-between;
+    color: #fff ;
+    font-size: 1.5rem;
+}
+.skills .prosses-bar {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255,255,255,0.3);
+    position: relative;
+}
+.skills ul li {
+    margin-bottom: 20px;
+}
+.skills .prosses-bar::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+    top: 0;
+    left: 0;
+    /* width: 20%; */
+}
+.skills .ps ul li:nth-child(1) .prosses-bar::after {
+    width: 95%;
+}
+.skills .ps ul li:nth-child(2) .prosses-bar::after {
+    width: 80%;
+}
+.skills .ps ul li:nth-child(3) .prosses-bar::after {
+    width: 80%;
+}
+.skills .ls ul li:nth-child(1) .prosses-bar::after {
+    width: 80%;
+}
+.skills .ls ul li:nth-child(2) .prosses-bar::after {
+    width: 100%;
+}
+.skills .ls ul li:nth-child(3) .prosses-bar::after {
+    width: 5%;
+}
+.degrees .degrees-detail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+.degrees .degrees-detail span:nth-child(1) {
+    color: #fff;
+}
+.timeline .column-6 ul {
+    border-left: 1px solid rgba(255,255,255,0.3);
+    padding-left: 25px;
+}
+.timeline ul li {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.timeline ul li::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    left: -38px;
+    background-color: #494B50;
+
+}
+.timeline .date {
+    background-color: rgba(255,255,255,0.1);
+    padding: 2px 20px;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    color: #fff;
+}
+.timeline .location {
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+}
+.timeline .location span:nth-child(1) {
+   color: #fff;
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+.bubble {
+    position: relative;
+    font-size: 1.5rem;
+    line-height: 30px;
+    text-align: left;
+    width: 80%;
+    height: 200px;
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 50px;
+}
+.b2 {
+    margin-top: 60px;
+}
+.bubble:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 20px 20px 0 0;
+    border-color: rgba(255,255,255,0.3) transparent transparent transparent;
+    bottom: -20px;
+    left: 20%;
+    margin-left: -10px;
+}
+.bubble::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 2;
+    border-style: solid;
+    border-width: 19px 19px 0 0;
+    border-color: #34363A transparent transparent transparent;
+    bottom: -18px;
+    left: 20%;
+    margin-left: -9px;
+}
+.testimonials .person {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.testimonials .person .person-pic-1 {
+    background-image: url(../images/testimonia.png);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.testimonials .person .person-pic-2 {
+    background-image: url(../images/testimonia.png);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.testimonials .person .person-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+}
+.testimonials .person .person-text span:nth-child(1){
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
